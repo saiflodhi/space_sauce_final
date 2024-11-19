@@ -197,7 +197,7 @@ export class SpaceshipAnimation {
     requestAnimationFrame(() => {
       overlay.style.opacity = '1';
       setTimeout(() => {
-        window.location.href = '/src/scene2.html';
+        window.location.href = '/scene2.html';
       }, 1000);
     });
   }
