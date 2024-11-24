@@ -5,13 +5,18 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-
+    
     /* Bundler mode */
-    "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
 
     /* Linting */
     "strict": false,
@@ -19,7 +24,7 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": false,
 
-    /* Additional options to ignore issues */
+    /* Additional options */
     "noImplicitAny": false,
     "ignoreDeprecations": "5.0",
     "allowJs": true,
