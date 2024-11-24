@@ -1,13 +1,12 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  resolve: {
-    alias: {
-      'three': 'three',
-      'three/examples/jsm': 'three/examples/jsm'
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        scene2: 'scene2.html'
+      }
     }
-  },
-  optimizeDeps: {
-    include: ['three']
   }
-});
+})
